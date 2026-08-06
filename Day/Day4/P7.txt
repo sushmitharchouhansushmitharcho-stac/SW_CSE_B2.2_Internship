@@ -3,7 +3,7 @@ rule should style
 (different type of selectors)
 1. Type Selector / element selector
 2. class
-3. ID selector
+3. ID selector(similar to class selector)
 4. Universal selector
 5. Grouping selector
 6. Descendant selector (have parent tag( if we apply a style to parent tag it apply to child tag) and child tag)
