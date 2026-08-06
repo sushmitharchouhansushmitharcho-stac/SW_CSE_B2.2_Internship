@@ -1,0 +1,14 @@
+CSS selectors: are patterns used to choose which HTML element a CSS 
+rule should style
+(different type of selectors)
+1. Type Selector / element selector
+2. class
+3. ID selector
+4. Universal selector
+5. Grouping selector
+6. Descendant selector (have parent tag( if we apply a style to parent tag it apply to child tag) and child tag)
+7. Child selector: ul(unordered list) --> li(list tag) | table --> tr (table reader) --> th(table header) --> td
+8. Sibling selector(tags are next to each other)
+9. Attribute selector
+10. Pseudo-class selector(selection of html tags based on certine)
+11. Pseudo-element selector(style the part of element)
