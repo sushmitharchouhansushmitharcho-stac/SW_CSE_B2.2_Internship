@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <style>
+        .named{
+            color: blue;
+        }
+        .hex{
+            /* 0(black) - f(white) : red,green,blue(Combination)*/
+            color: #ff0023;
+        }
+        /* no.varry from(color varry ) 0-255  */
+        /* a(transparency): 0-1 */
+        .rgb{
+            color:rgba(74, 12, 132,0.5);
+        }
+        .hsl{
+            /* hsl: Hue(0-360 | 0=red,120= green,240=blue(angle of color on a beam)),saturation (0-100%) vivid,Lightness (0-100%), (hsla)a: Transparency(0-1) */
+            color: hsla(128,100%,50%,0.6)
+        }
+        .gradient{
+            /* Linear | Radial | Conic*/
+            background-image: linear-gradient(135deg,red,blue);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <P>CSS Colors</P>
+    <ol>
+        <li class="named">Named colors</li>
+        <li class="hex">HEX Colors</li>
+        <li class="rgb">RGB & RGBA</li>
+        <li class="hsl">HSL & HSLA</li>
+        <li class="gradient">Gradient colors</li>
+    </ol>
+</body>
+</html>
