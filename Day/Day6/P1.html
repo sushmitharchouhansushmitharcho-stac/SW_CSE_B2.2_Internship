@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox | Display | flex-direction | justify-content | aling-items | align-content | fkex-wrap</title>
+    <style>
+        .container{
+             display: flex;
+             border: 2px solid blue;
+             gap: 10px;
+             padding: 10px;
+
+        }
+        .item{
+            background-color: burlywood;
+            color: darkred;
+            padding: 15px;
+            
+        }
+
+         .container2{
+             display: flex;
+             border: 2px solid brown;
+             gap: 10px;
+             padding: 10px;
+             /* column | row | roe-reverse | column-reverse  */
+             flex-direction: column-reverse;
+             margin-top: 20px;
+         }
+
+         .container3{
+             display: flex;
+             border: 2px solid orange;
+             gap: 10px;
+             padding: 10px;
+             /* center | space-around (include container)| space-between(only btw the elements) 
+             | space-evenly | flex-start(same as default ( starts towards container) | flex-end */
+             justify-content: center;
+             margin-top: 20px;
+         }
+         .item3{
+            background-color: rgb(54, 211, 23);
+            color: cornsilk;
+            padding: 15px;
+         }   
+
+         .container4{
+             display: flex;
+             border: 2px solid orange;
+             gap: 10px;
+             padding: 10px;
+             /* center | flex-start(aling at start of continer) | flex-end(aling  elements at bottom) | baseline(same as flex-start) | strech(elongation of elements)*/
+             align-items: flex-start;
+             height: 200px;
+             margin-top: 20px;
+
+         }
+
+         .container5{
+             display: flex;
+             border: 2px solid orange;
+             gap: 10px;
+             padding: 10px;
+             /* wrap | nowrap */
+             flex-wrap: wrap;
+             margin-top: 20px;
+             /* center | space-around (include container)| space-between(only btw the elements) 
+             | space-evenly | flex-start(same as default ( starts towards container) | flex-end */
+             align-content: space-evenly;
+             height: 300px;
+
+         }
+         .item5{
+            background-color: rgb(224, 11, 11);
+            color: rgb(14, 13, 13);
+            padding: 15px;
+         }   
+        
+    </style>
+</head>
+<body>
+    <p>CSS Flexbox: is a one-dimensional layout system designed to arrange and align itsems
+        in a container(a tag holds a tag in it), either in a row or column. (usage)It make much easier to creaat responsive, flexible layouts without complex positioning or floats.
+    </p>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- flex-direction  -->
+    <div class="container2">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- justify-content -->
+    <div class="container3">
+        <div class="item3">Item 1</div>
+        <div class="item3">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+
+    <!-- align-items -->
+    <div class="container4">
+        <div class="item3">Item 1</div>
+        <div class="item3">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+
+    <!--flex-wrap  -->
+    <div class="container5">
+        <div class="item5">Item 1</div>
+        <div class="item5">Item 2</div>
+        <div class="item5">Item 3</div>
+        <div class="item5">Item 4</div>
+        <div class="item5">Item 5</div>
+        <div class="item5">Item 6</div>
+    </div>
+    
+</body>
+</html>
