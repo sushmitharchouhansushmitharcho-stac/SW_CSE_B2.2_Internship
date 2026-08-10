@@ -91,6 +91,24 @@
             padding: 10px;
             text-align: center;
         }
+        /* 4. Grid item placement(grid-column, grid-row, span)  */
+        .placement-grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,80px);
+            gap: 10px;
+            background-color: #ceed44;
+
+        }
+        .placement-grid .item1{
+            grid-column: 1/4; /* whr to start-whr to end (start from clm1-enf at clm4) */ 
+        }
+        .placement-grid .item2{
+            grid-row: 2/4;
+        }
+        .placement-grid .item3{
+            grid-column: 3/ span 4;/* start from clm3 - span4*/
+        }
     </style>
 </head>
 <body>
@@ -122,11 +140,22 @@
     <section>
         <h2>3. Grid Template Areas(Header, sidebar, Main, Footer) </h2>
         <div class="page">
-             <header class="header">Header</header>
+             <header class="header">
+                Header</header>
              <header class="sidebar">Sidebar</header>
              <header class="main">Main Content</header>
              <header class="footer">Footer</header> 
         </div>
+    </section>
+    <section>
+         <h2>3. Grid item placement(grid-column, grid-row, span) </h2>
+        <div class="placement-grid">
+             <div class="box item1">Item1</div>
+             <div class="box">Item2</div>
+             <div class="box item2">Item3</div>
+             <div class="box">Item4</div>
+             <div class="box item3">Item5</div>
+             <div class="box">Item6</div>
     </section>
 </body>
 </html>
