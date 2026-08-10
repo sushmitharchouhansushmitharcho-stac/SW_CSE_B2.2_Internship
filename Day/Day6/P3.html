@@ -21,6 +21,7 @@
         h2{
             margin-bottom: 10px;
         }
+        /* 1. Basic Grid( columns, rows, repeat,fr) */
         .box{
             background-color:cadetblue ;
             color: aliceblue;
@@ -36,6 +37,7 @@
             border: 1px solid #da1717;
             background: #f478ef;
         }
+        /* 2. Gap, row-gap, column-gap */
         .gap-grid{
             display: grid;
              grid-template-columns: repeat(3 , 1fr); /* fr :fraction */
@@ -53,6 +55,7 @@
             height: 250px;
             width: 400px;
         }
+        /* 3. Grid Template Areas(Header, sidebar, Main, Footer) */
         .page{
             display: grid;
             grid-template-columns: 200px 1fr;
@@ -107,7 +110,7 @@
             grid-row: 2/4;
         }
         .placement-grid .item3{
-            grid-column: 3/ span 4;/* start from clm3 - span4*/
+            grid-column: 3/ span 2;/* start from clm3 - span4*/
         }
     </style>
 </head>
