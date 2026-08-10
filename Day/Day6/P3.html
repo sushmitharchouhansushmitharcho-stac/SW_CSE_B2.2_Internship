@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: gold;
+            color: crimson;
+        }
+        section{
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        h2{
+            margin-bottom: 10px;
+        }
+        .box{
+            background-color:cadetblue ;
+            color: aliceblue;
+            padding:8px ;
+            text-align: center;
+            border-radius: 4px; /* smooth curve edge */
+        }
+        .basic-grid{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr); /* fr :fraction */
+            grid-template-rows: repeat(2, 120px);
+            gap: 12px;
+            border: 1px solid #da1717;
+            background: #f478ef;
+        }
+    </style>
+</head>
+<body>
+    <P>CSS Grid: two-dimensional layout system.(align or create the element in both rows and columns)
+                We can design the layouts using rows and columns together.
+    </P>
+    <section>
+        <h2>1. Basic Grid( columns, rows, repeat,fr)</h2>
+        <div class="basic-grid">
+             <div class="box">1</div>
+             <div class="box">2</div>
+             <div class="box">3</div>
+             <div class="box">4</div>
+             <div class="box">5</div>
+             <div class="box">6</div>   
+        </div>
+        
+        
+    </section>
+</body>
+</html>
