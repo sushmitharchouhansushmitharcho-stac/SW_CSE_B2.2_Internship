@@ -36,6 +36,23 @@
             border: 1px solid #da1717;
             background: #f478ef;
         }
+        .gap-grid{
+            display: grid;
+             grid-template-columns: repeat(3 , 1fr); /* fr :fraction */
+            grid-template-rows: repeat(2, 120px);
+            row-gap: 12px;
+            column-gap: 25px;
+            border: 1px solid #da1717;
+            background: #f478ef;
+            /* justify-content helps in horizontal alignment in continer */
+            justify-content: center;
+            /* vertical alignment */
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            height: 250px;
+            width: 400px;
+        }
     </style>
 </head>
 <body>
@@ -52,8 +69,17 @@
              <div class="box">5</div>
              <div class="box">6</div>   
         </div>
-        
-        
+    </section>
+     <section>
+        <h2>2. Gap, row-gap, column-gap </h2>
+        <div class="gap-grid">
+             <div class="box">1</div>
+             <div class="box">2</div>
+             <div class="box">3</div>
+             <div class="box">4</div>
+             <div class="box">5</div>
+             <div class="box">6</div>   
+        </div>
     </section>
 </body>
 </html>
