@@ -1,0 +1,2 @@
+JavaScript : It is a programming language for the web that makes
+              websites interactive and dynamic.
