@@ -112,3 +112,20 @@ const user = users.find(Student=>Student.id === 2);
 console.log(user);
 const index = users.findIndex(Student=>Student.name === "Sanjana");
 console.log(index);
+
+// Transforming Arrays:(imp)
+// 1.Map
+console.log("Map");
+const nums3=[10,20,30,40,50];
+const double = nums3.map(n=>n*2);
+console.log(double);
+
+//2.filter
+console.log("filter")
+const greaterThan30=nums3.filter(n=>n>30);
+console.log(greaterThan30);
+
+//3.reduce(acc , curr are not a keywords if we change that it doesnot affect to output)
+console.log("reduce");
+const sumOfArray=nums3.reduce((acc,curr)=>acc+curr,10);
+console.log(sumOfArray);
