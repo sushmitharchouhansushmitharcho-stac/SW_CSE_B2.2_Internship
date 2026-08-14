@@ -65,3 +65,9 @@ function sum(x, y, z){
 }
 const nums3 = [1, 2, 3];
 console.log(sum(...nums3));
+
+// unique values:
+const arr2 = [1,8,2,3,3,4,5,4,6,4,7,8];
+const unique = [...new Set(arr2)]; //  the words new - set is a unique identifier ,
+                                   // if we use any other words instead of new - set we get error
+console.log(unique);
