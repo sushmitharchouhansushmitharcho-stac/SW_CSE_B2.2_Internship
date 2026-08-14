@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading and Changing content</title>
+</head>
+<body>
+    <!-- textContent(tc) -->
+    <p id="tc">textContent</p>
+    <!-- innerText(it) -->
+    <p id="it">innertext</p>
+    <!-- innerHTML -->
+     <p id="ih">innerHTML</p>
+
+    <Script> // tce= textContentexample
+      // textContent: used when working with the plain text; 
+      // tc does not consider the tag as html tag
+        const tce = document.getElementById("tc");
+        console.log(tce.textContent); // textContent
+        tce.textContent = "textContent changed via JS; example";
+
+        // innerText: work with this when we want tp work with visible text on the page.
+        const ite = document.getElementById("it");
+        console.log(ite.innerText); // innerText
+        ite.innerText = "innerText changed via JS; example";
+
+        // innerHTML: it is used when read or said to the HTML inside an element.
+        const ihe = document.getElementById("ih");
+        console.log(ihe.innerHTML); // innerTExt
+        ihe.innerHTML = "<strong><i>innerHTML</i> changed via JS; example</strong>";
+
+
+    </Script>
+</body>
+</html>
