@@ -13,6 +13,8 @@
     <!-- innerHTML -->
      <p id="ih">innerHTML</p>
 
+     <button id="changeBtn">Click for change</button>
+
     <Script> // tce= textContentexample
       // textContent: used when working with the plain text; 
       // tc does not consider the tag as html tag
@@ -30,7 +32,13 @@
         console.log(ihe.innerHTML); // innerTExt
         ihe.innerHTML = "<strong><i>innerHTML</i> changed via JS; example</strong>";
 
+        const changeBtn = document.getElementById("changeBtn");
+        changeBtn.addEventListener("click",function(){
+            tce.textContent = "textContent changed via JS; example. After the button is Clicked";
+            ite.innerText = "innerText changed via JS; example. After the button is Clicked";
+            ihe.innerHTML = "<strong><i>innerHTML</i> changed via JS; example</strong>. After the button is Clicked";
 
+        })
     </Script>
 </body>
 </html>
