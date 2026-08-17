@@ -11,9 +11,17 @@ console.log(result);
 //  untill the promise reaches either the resolve state or reject state
 
 async function getData() {
-    const promise = promise.resolve("Hello");
+    const promise = Promise.resolve("Hello");
 
     const value = await promise;
     console.log(value);
 }
 getData();
+
+// async function getData() {
+//     const promise = Promise.resolve("Hello");
+
+//     const value = await promise;
+//     console.log(value);
+// }
+// getData();
