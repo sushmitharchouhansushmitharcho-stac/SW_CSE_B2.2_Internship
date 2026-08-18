@@ -1,0 +1,4 @@
+// React JS: is a JS library for bulding user intefaces(UI),
+//  especially for web apps where the screen changes often.
+// React follows a declarative style,
+// Virtual DOM: the page get reloaded easily
