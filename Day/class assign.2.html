@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sushmitha | Portfolio</title>
+
+    <!-- CSS -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* Navigation */
+        header {
+            background: #111827;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hello {
+            color: #2563eb;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #111827;
+            margin: 10px 0;
+        }
+
+        .hero h2 {
+            color: #374151;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #6b7280;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px #00000018;
+        }
+
+        .profile-circle {
+            width: 130px;
+            height: 130px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .profile-card h3 {
+            margin-top: 20px;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #2563eb;
+            margin: 10px auto;
+        }
+
+        /* About */
+        .about {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px #00000010;
+        }
+
+        .about p {
+            color: #6b7280;
+            margin: 12px 0;
+            line-height: 1.7;
+        }
+
+        /* Skills */
+        #skills {
+            background: #eef2ff;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px #00000010;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card span {
+            font-size: 35px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        .card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            color: #6b7280;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .skills-container,
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HTML -->
+
+    <!-- Navigation -->
+    <header>
+
+        <nav>
+
+            <h2 class="logo">Sushmitha.</h2>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="hello">Hello, I'm</p>
+
+            <h1>Sushmitha</h1>
+
+            <h2>Computer Science Engineering Student</h2>
+
+            <p>
+                I am a passionate CSE student interested in
+                web development, programming and technology.
+                I love learning new skills and creating useful projects.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Work
+            </a>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <div class="profile-circle">
+                S
+            </div>
+
+            <h3>Future Software Developer</h3>
+
+            <p>Learn • Build • Create</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about">
+
+            <h3>Who am I?</h3>
+
+            <p>
+                I am a Computer Science Engineering student
+                interested in programming and web development.
+            </p>
+
+            <p>
+                I am currently learning HTML, CSS, JavaScript,
+                C and Python. My goal is to become a skilled
+                software developer and build creative applications.
+            </p>
+
+            <p>
+                <b>Education:</b> Computer Science Engineering
+            </p>
+
+            <p>
+                <b>Interests:</b> Web Development, Programming,
+                Technology and Problem Solving
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="card">
+
+                <span>🌐</span>
+
+                <h3>HTML</h3>
+
+                <p>
+                    Creating structured and meaningful webpages.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>🎨</span>
+
+                <h3>CSS</h3>
+
+                <p>
+                    Designing beautiful and responsive websites.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>⚡</span>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Adding interaction and functionality to websites.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>💻</span>
+
+                <h3>C Programming</h3>
+
+                <p>
+                    Developing programming logic and problem-solving skills.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>🐍</span>
+
+                <h3>Python</h3>
+
+                <p>
+                    Learning programming and developing applications.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>🚀</span>
+
+                <h3>Problem Solving</h3>
+
+                <p>
+                    Finding logical and efficient solutions to problems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+        <div class="projects-container">
+
+            <div class="card">
+
+                <span>🌐</span>
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website developed
+                    using HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>🤖</span>
+
+                <h3>Obstacle Avoiding Robot</h3>
+
+                <p>
+                    An Arduino-based robot that detects obstacles
+                    and changes its direction automatically.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <span>💡</span>
+
+                <h3>Smart Home System</h3>
+
+                <p>
+                    A smart home concept using sensors
+                    and automation technology.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <p>📧 Email: sushmitharchouhansushmitharcho@gmail.com</p>
+
+        <p>📱 Phone: +91 9036657131</p>
+
+        <p>📍 India</p>
+
+        <button class="btn" onclick="showMessage()">
+            Say Hello 👋
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Sushmitha | Personal Portfolio
+        </p>
+
+        <p>
+            Made with ❤️ using HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function showMessage() {
+
+            alert(
+                "Thank you for visiting my portfolio! 😊"
+            );
+
+        }
+
+        console.log(
+            "Welcome to Sushmitha's Portfolio!"
+        );
+
+    </script>
+
+</body>
+</html>
